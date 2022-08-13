@@ -548,6 +548,36 @@ a:hover{
     background: none;
     outline: 1px solid #A50000;
 }
+.burger{
+    display: none;
+}
+.mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    margin-left: -10px;
+}
+@media screen and (max-width: 499px){
+    .wrapper{
+        height: 25vh;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 699px){
+    .wrapper{
+        height: 35vh;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 899px){
+    .wrapper{
+        height: 45vh;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1023px){
+    .wrapper{
+        height: 65vh;
+    }
+}
 @media screen and (max-width: 1023px){
     .header__wrap{
 
@@ -562,7 +592,6 @@ a:hover{
         width: 60px;
     }
     .header__wrap{
-        width: 100%;
         padding: 19px 10px;
         max-width: none;
     }
@@ -596,7 +625,7 @@ a:hover{
     }
     .coach{
         gap: 10px;
-        padding: 116px 10px 0 10px;
+        padding: 98px 10px 0 10px;
         justify-content: space-between;
     }
     .coach__item{
@@ -621,7 +650,7 @@ a:hover{
         flex-direction: column;
     }
     .footer__map iframe{
-        width: 360px;
+        width: 100vw;
         height: 222px;
     }
     .footer__info{
@@ -692,5 +721,121 @@ a:hover{
     .entry{
         flex-direction: column;
         gap: 30px;
+    }
+    .video{
+        object-fit: contain;
+    }
+    .scroll--arrow{
+        display: none;
+    }
+    .european__list, .latin__list, .child__list{
+        position: unset;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .european__check, .latin__check, .child__check{
+        position: unset;
+    }
+    .european__list-name{
+        text-align: center;
+    }
+    .burger{
+        display: block;
+        width: 40px;
+        height: 45px;
+        position: relative;
+        transition-duration: 1s;
+        cursor: pointer;
+        top: 19px;
+        margin-left: 10px;
+        z-index: 3;
+    }
+    .burger span{
+        height: 6px;
+        width: 40px;
+        background-color: #A50000;
+        border-radius: 20px;
+        position: absolute;
+        transition-duration: .25s;
+        transition-delay: .25s;
+    }
+    .burger span:before{
+        left: 0;
+        position: absolute;
+        top: -13px;
+        height: 6px;
+        width: 40px;
+        background-color: #A50000;
+        content: "";
+        border-radius: 20px;
+        transition-duration: .25s;
+        transition: transform .25s, top .25s .25s;
+    }
+    .burger span:after{
+        left: 0;
+        position: absolute;
+        top: 13px;
+        height: 6px;
+        width: 40px;
+        background-color: #A50000;
+        content: "";
+        border-radius: 20px;
+        transition-duration: .25s;
+        transition: transform .25s, top .25s .25s;
+    }
+    .burger.open span{
+        transition-duration: 0.1s;
+        transition-delay: .25s;
+        background: transparent;
+    }
+    .burger.open span:before{
+        transition: top .25s, transform .25s .25s;
+        transform: rotateZ(-45deg);
+        top: 0;
+    }
+    .burger.open span:after{
+        transition: top 0.4s, transform .25s .25s;
+        transform: rotateZ(45deg);
+        top: 0;
+    }
+    .mobile__nav{
+        background: white;
+        padding: 60px 0 40px 0;
+        z-index: 2;
+    }
+    .mobile__nav > .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mobile__nav > .nav > .nav__item{
+        color: black;
+    }
+    .mobile__nav > .footer__info-bot{
+        margin-top: 60px;
+        align-items: center;
+        gap: 20px;
+    }
+    .mobile__nav > .footer__info-bot > .footer__info-name{
+        color: black;
+    }
+    .directions{
+        margin-top: -98px;
+        padding-top: 98px;
+    }
+    .history__open{
+        padding: 70px 10px;
+    }
+    #overlay{
+        background: black;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10000px;
     }
 }

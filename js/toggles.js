@@ -37,16 +37,17 @@ $('.nav__item').click(function () {
     if ($(window).width() < 1024) {
         $('.mobile').slideToggle('slow')
         $('.burger').toggleClass('open')
-    }
-    if ($('body').attr('style')) {
-        $('body').removeAttr('style')
 
-        $('#overlay').remove()
-    }
-    else {
-        $('body').css({
-            overflow: 'hidden'
-        })
-        $('body').append('<div id="overlay">')
+        if ($('body').attr('style')) {
+            $('body').removeAttr('style')
+
+            $('#overlay').remove()
+        }
+        else {
+            $('body').css({
+                overflow: 'hidden'
+            })
+            $('body').append('<div id="overlay">')
+        }
     }
 })

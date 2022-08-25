@@ -97,7 +97,7 @@ a:hover{
     background: white;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     height: 507px;
     position: relative;
@@ -188,8 +188,8 @@ a:hover{
     padding: 11px 0;
 }
 .list__open{
-    padding: 60px 0;
-    display: none;
+    max-width: 1160px;
+    margin: 120px auto;
 }
 .list__item-tops{
     display: flex;
@@ -199,7 +199,6 @@ a:hover{
 }
 .list__item-tops:hover{
     cursor: pointer;
-    outline: 3px solid #A50000;
 }
 .list__item:last-child{
     border-bottom: 1px solid rgba(171, 171, 171, 0.6);
@@ -503,6 +502,7 @@ a:hover{
     max-width: 800px;
     margin: 0 auto;
     padding: 55px 80px;
+    background: white;
 }
 .entry__text{
     display: flex;
@@ -558,6 +558,205 @@ a:hover{
     width: 100vw;
     margin-left: -10px;
 }
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.info__text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 720px;
+}
+.info__text-title{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 78px;
+    color: white;
+}
+.info__text-desc{
+    font-size: 24px;
+    color: white;
+}
+.info__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 340px;
+    height: 360px;
+    box-sizing: border-box;
+    padding: 40px 15px;
+    backdrop-filter: blur(25px);
+}
+.info__form-title{
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.info__form-input{
+    outline: 1px solid white;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background: none;
+    color: white;
+}
+.info__form-input::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+.info__form-submit{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background: #A50000;
+    outline: 1px solid #A50000;
+    height: 40px;
+    transition: 0.2s;
+}
+.info__form-submit:hover{
+    color: #A50000;
+    background: none;
+    cursor: pointer;
+}
+.schedule{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 120px auto;
+    gap: 32px;
+    position: relative;
+}
+.schedule__choose{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    top: -50px;
+    left: 0;
+}
+.schedule__choose-address{
+    font-size: 24px;
+    color: #A50000;
+    background: none;
+    outline:1px solid #A50000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    transition: 0.2s;
+}
+.schedule__choose-address:hover{
+    cursor: pointer;
+    background: #A50000;
+    color: white;
+}
+.schedule__choose-active{
+    background: #A50000;
+    color: white;
+}
+.schedule__time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 37px;
+    padding-top: 75px;
+}
+.schedule__time-item{
+    font-size: 36px;
+    line-height: 44px;
+}
+.schedule__day{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+}
+.schedule__day-values{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.schedule__day-values--item{
+    font-size: 36px;
+    line-height: 44px;
+    width: 100%;
+}
+.schedule__day-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.schedule__day-boxes--item{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.box--item{
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgba(203, 203, 203, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adv{
+    background: #A50000;
+    padding: 84px 0;
+}
+.last{
+    max-width: 960px;
+    margin: 120px auto;
+    background: rgba(171, 171, 171, 0.25);
+    padding: 84px 100px;
+}
+.schedule__day-boxes--item:nth-child(4) > .box--item:nth-child(2), .schedule__day-boxes--item:nth-child(5) > .box--item:nth-child(2), .schedule__day-boxes--item:nth-child(4) > .box--item:nth-child(4), .schedule__day-boxes--item:nth-child(5) > .box--item:nth-child(4), .schedule__day-boxes--item:nth-child(4) > .box--item:nth-child(5), .schedule__day-boxes--item:nth-child(5) > .box--item:nth-child(5){
+    background: #A50000;
+}
+.schedule__day-boxes--item:nth-child(6) > .box--item:nth-child(2), .schedule__day-boxes--item:nth-child(7) > .box--item:nth-child(2), .schedule__day-boxes--item:nth-child(6) > .box--item:nth-child(4), .schedule__day-boxes--item:nth-child(7) > .box--item:nth-child(4), .schedule__day-boxes--item:nth-child(6) > .box--item:nth-child(5), .schedule__day-boxes--item:nth-child(7) > .box--item:nth-child(5), .schedule__day-boxes--item:nth-child(8) > .box--item:nth-child(5){
+    background-color: rgb(63, 171, 106);
+}
+.schedule--item{
+    font-size: 24px;
+    text-align: center;
+    color: #EFCFCF;
+    background: white;
+    padding: 0 5px;
+    width: 80%;
+}
+.address{
+    font-size: 16px;
+}
+.red{
+    color: #A50000;
+}
+.green{
+    color: rgb(63, 171, 106);
+    font-size: 22px;
+}
+.gran{
+    font-size: 18px;
+}
+.latin{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1200px){
+    .header__wrap, .info, .schedule{
+        max-width: calc(100% - 40px)
+    }
+}
 @media screen and (max-width: 499px){
     .wrapper{
         height: 25vh;
@@ -576,6 +775,16 @@ a:hover{
 @media screen and (min-width: 900px) and (max-width: 1023px){
     .wrapper{
         height: 65vh;
+    }
+}
+@media screen and (max-width: 1440px){
+    .wrapper{
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 1230px){
+    .wrapper{
+        height: 75vh;
     }
 }
 @media screen and (max-width: 1023px){
@@ -837,5 +1046,11 @@ a:hover{
         left: 0;
         width: 100%;
         height: 10000px;
+    }
+    .video{
+        display: none;
+    }
+    .wrapper{
+        background: url("../img/main.png") top center/100% no-repeat;
     }
 }

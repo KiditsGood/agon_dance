@@ -14,10 +14,10 @@
             <p class="logo__text">АГОН</p>
         </div>
         <nav class="nav">
-            <a href="#history" class="nav__item nav__history">О нас</a>
             <a href="#directions" class="nav__item">Направления</a>
+            <a href="" class="nav__item nav__history">Расписание</a>
+            <a href="" class="nav__item">История</a>
             <a href="#coach" class="nav__item">Тренеры</a>
-            <a href="" class="nav__item">Фотогалерея</a>
             <a href="#footer" class="nav__item">Адрес</a>
         </nav>
         <div class="phone">
@@ -30,10 +30,10 @@
         <div class="mobile">
             <div class="mobile__nav">
                 <nav class="nav">
-                    <a href="#history" class="nav__item nav__history">О нас</a>
                     <a href="#directions" class="nav__item">Направления</a>
+                    <a href="" class="nav__item nav__history">Расписание</a>
+                    <a href="" class="nav__item">О нас</a>
                     <a href="#coach" class="nav__item">Тренеры</a>
-                    <a href="" class="nav__item">Фотогалерея</a>
                     <a href="#footer" class="nav__item">Адрес</a>
                 </nav>
                 <div class="footer__info-bot">
@@ -51,6 +51,18 @@
     </div>
 </header>
 <main class="wrapper">
+    <div class="info">
+        <div class="info__text">
+            <h1 class="info__text-title">Школа бальных танцев для детей и взрослых в Воронеже</h1>
+            <p class="info__text-desc">Команда педагогов-профессионалов готовит спортсменов всех уровней по всем направлениям танцевального спорта</p>
+        </div>
+        <form class="info__form">
+            <p class="info__form-title">Запись на первое занятие</p>
+            <input type="text" class="info__form-input" placeholder="ФИО">
+            <input type="email" class="info__form-input" placeholder="Email">
+            <button class="info__form-submit">ЗАПИСАТЬСЯ</button>
+        </form>
+    </div>
     <video class="video" playsinline loop muted autoplay="autoplay">
         <source src="img/agon.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
@@ -60,7 +72,7 @@
     <div id="directions" class="directions">
         <div class="directions__top">
             <div class="directions__european">
-                <p class="directions__european-text">EUROPEAN PROGRAM</p>
+                <p class="directions__european-text">ЕВРОПЕЙСКАЯ ПРОГРАММА</p>
                 <div class="european__list">
                     <p class="european__list-name">Европейская программа включает:</p>
                     <ul>
@@ -75,7 +87,7 @@
                 </div>
             </div>
             <div class="directions__latin">
-                <p class="directions__latin-text">LATIN AMERICAN PROGRAM</p>
+                <p class="directions__latin-text">ЛАТИНОАМЕРИКАНСКАЯ ПРОГРАММА</p>
                 <div class="latin__list">
                     <p class="european__list-name latin__drop">Латиноамериканская программа включает:</p>
                     <ul>
@@ -91,7 +103,7 @@
             </div>
         </div>
         <div class="directions__bot">
-            <p class="directions__child">CHILDREN DANCING</p>
+            <p class="directions__child">ДЕТСКИЕ ТАНЦЫ</p>
             <div class="child__list">
                 <p class="european__list-name">Детские танцы включают:</p>
                 <ul>
@@ -106,74 +118,127 @@
             </div>
         </div>
     </div>
-    <div class="list">
-        <div id="history" class="list__item">
-            <div class="list__item-tops">
-                <p class="list__item-name">История клуба</p>
-                <img src="img/plus.svg" alt="" class="list__item-check">
+    <div class="schedule">
+        <div class="schedule__choose">
+            <p class="schedule__choose-address schedule__choose-active">СК "Гран - При"</p>
+            <p class="schedule__choose-address">Жил. массив Олимпийский, 10</p>
+        </div>
+        <div class="schedule__time">
+            <p class="schedule__time-item">17:00</p>
+            <p class="schedule__time-item">17:30</p>
+            <p class="schedule__time-item">18:00</p>
+            <p class="schedule__time-item">18:30</p>
+            <p class="schedule__time-item">19:00</p>
+            <p class="schedule__time-item">19:30</p>
+            <p class="schedule__time-item">21:00</p>
+            <p class="schedule__time-item">21:30</p>
+        </div>
+        <div class="schedule__day">
+            <div class="schedule__day-values">
+                <p class="schedule__day-values--item">Пн</p>
+                <p class="schedule__day-values--item">Вт</p>
+                <p class="schedule__day-values--item">Ср</p>
+                <p class="schedule__day-values--item">Чт</p>
+                <p class="schedule__day-values--item">Пт</p>
+                <p class="schedule__day-values--item">Сб</p>
             </div>
-            <div class="list__open history__open">
-                <div class="list__items">
-                    <div class="list__open-item">
-                        <div class="history__text">
-                            <p class="history__text-title">КЛУБ “АГОН” ОСНОВАН В 1999 ГОДУ</p>
-                            <p class="history__text-description">Клуб был основан бессменным руководителем Садчиковым Павлом Валерьевичем. С <span class="text--red">2001</span> года ТСК "Агон" является членом ВООСО "Союз танцевального спорта Воронежской области". С <span class="text--red">2011</span> года зарегистрирован в Министерстве юстиции
-                                как Воронежская городская детская общественная организация Танцевально-спортивный клуб "Агон".</p>
-                        </div>
-                        <img src="img/first_history.png" alt="" class="history__image-first">
-                    </div>
-                    <div class="list__open-item">
-                        <img src="img/second_history.png" alt="" class="history__image-second">
-                        <div class="history__text">
-                            <p class="history__text-title">ВЫПУСКАЕМ МАСТЕРОВ СПОРТА РОССИИ</p>
-                            <p class="history__text-description">На протяжении нескольких десятков лет в клубе были воспитаны лучшие спортсмены Воронежской области и Центрального федерального округа России, чемпионы и победители первенств и кубков Воронежской области, призеры и финалисты первенств Центрального федерального округа России, победители и призеры крупных международных соревнований.</p>
-                        </div>
-                    </div>
+            <div class="schedule__day-boxes">
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"><!--<p class="schedule--item">Дети<br>4 - 7 лет</p>--></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item red">Дети<br>4 - 7 лет</p></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item red">Дети<br>4 - 7 лет</p></div>
+                    <div class="box--item"><p class="schedule--item red">Дети<br>4 - 7 лет</p></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item red gran">Детские<br> танцы</p></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item red gran">Детские<br> танцы</p></div>
+                    <div class="box--item"><p class="schedule--item red gran">Детские<br> танцы</p></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item green">Взрослые</p></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item green">Взрослые</p></div>
+                    <div class="box--item"><p class="schedule--item green">Взрослые</p></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item green gran">Европейская<br> программа</p></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item green gran latin">Латиноамериканская<br> программа</p></div>
+                    <div class="box--item"><p class="schedule--item green gran">Европейская<br> программа</p></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item green gran latin">Латиноамериканская<br> программа</p></div>
+                    <div class="box--item"></div>
                 </div>
             </div>
         </div>
-        <div class="list__item">
-            <div class="list__item-tops">
-                <p class="list__item-name">Новости клуба</p>
-                <img src="img/plus.svg" alt="" class="list__item-check">
+    </div>
+    <div class="adv">
+        <div class="entry">
+            <div class="entry__text">
+                <p class="entry__text-title">Запись на первое занятие</p>
+                <p class="entry__text-desc">Оставьте заявку для записи на первое заятие и мы свяжется с Вами
+                    в ближайшее время</p>
             </div>
-            <div class="list__open">
-                <div class="news">
-                    <div class="news__top">
-                        <div class="news__item">
-                            <img src="img/news.png" alt="" class="news__item-img">
-                            <p class="news__item-text">Новость</p>
-                        </div>
-                        <div class="news__item">
-                            <img src="img/news.png" alt="" class="news__item-img">
-                            <p class="news__item-text">Новость</p>
-                        </div>
-                        <div class="news__item">
-                            <img src="img/news.png" alt="" class="news__item-img">
-                            <p class="news__item-text">Новость</p>
-                        </div>
-                    </div>
-                    <a href="" class="news__button">Читать все новости</a>
-                </div>
+            <div class="entry__form">
+                <input class="entry__form-input" type="text" placeholder="ФИО">
+                <input class="entry__form-input" type="text" placeholder="E-mail">
+                <a href="" class="entry__form-button">ЗАПИСАТЬСЯ</a>
             </div>
         </div>
-        <div class="list__item">
-            <div class="list__item-tops">
-                <p class="list__item-name">Запись на первое занятие</p>
-                <img src="img/plus.svg" alt="" class="list__item-check">
+    </div>
+    <div class="list__open history__open">
+        <div class="list__items">
+            <div class="list__open-item">
+                <div class="history__text">
+                    <p class="history__text-title">КЛУБ “АГОН” ОСНОВАН В 1999 ГОДУ</p>
+                    <p class="history__text-description">Клуб был основан бессменным руководителем Садчиковым Павлом Валерьевичем. С <span class="text--red">2001</span> года ТСК "Агон" является членом ВООСО "Союз танцевального спорта Воронежской области". С <span class="text--red">2011</span> года зарегистрирован в Министерстве юстиции
+                        как Воронежская городская детская общественная организация Танцевально-спортивный клуб "Агон".</p>
+                </div>
+                <img src="img/first_history.png" alt="" class="history__image-first">
             </div>
-            <div class="list__open">
-                <div class="entry">
-                    <div class="entry__text">
-                        <p class="entry__text-title">Запись на первое занятие</p>
-                        <p class="entry__text-desc">Оставьте заявку для записи на первое заятие и мы свяжется с Вами
-                            в ближайшее время</p>
-                    </div>
-                    <div class="entry__form">
-                        <input class="entry__form-input" type="text" placeholder="ФИО">
-                        <input class="entry__form-input" type="text" placeholder="E-mail">
-                        <a href="" class="entry__form-button">ЗАПИСАТЬСЯ</a>
-                    </div>
+            <div class="list__open-item">
+                <img src="img/second_history.png" alt="" class="history__image-second">
+                <div class="history__text">
+                    <p class="history__text-title">ВЫПУСКАЕМ МАСТЕРОВ СПОРТА РОССИИ</p>
+                    <p class="history__text-description">На протяжении нескольких десятков лет в клубе были воспитаны лучшие спортсмены Воронежской области и Центрального федерального округа России, чемпионы и победители первенств и кубков Воронежской области, призеры и финалисты первенств Центрального федерального округа России, победители и призеры крупных международных соревнований.</p>
                 </div>
             </div>
         </div>
@@ -247,6 +312,20 @@
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Игорь Пульман</p>
                 <p class="coach__item-text--desc">Тренер ТСК "Агон"</p>
+            </div>
+        </div>
+    </div>
+    <div class="last">
+        <div class="entry">
+            <div class="entry__text">
+                <p class="entry__text-title">Запись на первое занятие</p>
+                <p class="entry__text-desc">Оставьте заявку для записи на первое заятие и мы свяжется с Вами
+                    в ближайшее время</p>
+            </div>
+            <div class="entry__form">
+                <input class="entry__form-input" type="text" placeholder="ФИО">
+                <input class="entry__form-input" type="text" placeholder="E-mail">
+                <a href="" class="entry__form-button">ЗАПИСАТЬСЯ</a>
             </div>
         </div>
     </div>

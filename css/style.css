@@ -15,6 +15,12 @@ a{
 a:hover{
     color: #A50000;
 }
+button{
+    transition: 0.2s;
+}
+button:hover{
+    cursor: pointer;
+}
 
 .wrapper{
     height: 100vh;
@@ -25,8 +31,8 @@ a:hover{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
     transition: 0.2s;
+    z-index: 6;
 }
 .header__wrap{
     gap: 37px;
@@ -61,6 +67,7 @@ a:hover{
     font-size: 20px;
     line-height: 24px;
     color: white;
+    font-weight: 600;
 }
 .phone{
     display: flex;
@@ -74,6 +81,7 @@ a:hover{
     font-size: 20px;
     line-height: 24px;
     color: white;
+    font-weight: 600;
 }
 .video{
     position: absolute;
@@ -87,6 +95,7 @@ a:hover{
     gap: 0;
     margin-top: -116px;
     padding-top: 116px;
+    z-index: 5;
 }
 .directions__top{
     display: flex;
@@ -97,7 +106,7 @@ a:hover{
     background: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
     height: 507px;
     position: relative;
@@ -118,16 +127,16 @@ a:hover{
     cursor: pointer;
 }
 .directions__european-text{
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 500;
-    line-height: 78px;
+    line-height: 48px;
     max-width: 418px;
     transition: 0.2s;
 }
 .directions__latin-text{
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 500;
-    line-height: 78px;
+    line-height: 48px;
     max-width: 571px;
     color: white;
     margin-left: 50px;
@@ -140,18 +149,25 @@ a:hover{
     background: #EFCFCF;
     height: 317px;
     position: relative;
+    z-index: 5;
 }
 .directions__bot:hover{
     cursor: pointer;
 }
 .directions__child{
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 500;
-    line-height: 78px;
+    line-height: 48px;
     color: black;
     max-width: 571px;
     text-align: center;
     transition: 0.2s;
+}
+@media screen and (min-width: 1000px) and (max-width: 1439px){
+    .directions__latin-text, .directions__child, .directions__european-text{
+        font-size: 36px;
+        line-height: 36px;
+    }
 }
 .scroll--arrow{
     position: absolute;
@@ -189,7 +205,8 @@ a:hover{
 }
 .list__open{
     max-width: 1160px;
-    margin: 120px auto;
+    margin: 0 auto 120px auto;
+    padding-top: 116px;
 }
 .list__item-tops{
     display: flex;
@@ -412,7 +429,7 @@ a:hover{
     color: white;
 }
 .directions__left{
-    transform: translateX(-160px);
+    transform: translateX(-200px);
 }
 .list__items{
     display: flex;
@@ -632,16 +649,17 @@ a:hover{
     align-items: flex-start;
     justify-content: space-between;
     max-width: 1160px;
-    margin: 120px auto;
+    margin: -90px auto 120px auto;
     gap: 32px;
     position: relative;
+    padding-top: 210px;
 }
 .schedule__choose{
     position: absolute;
     display: flex;
     align-items: center;
     gap: 20px;
-    top: -50px;
+    top: 150px;
     left: 0;
 }
 .schedule__choose-address{
@@ -726,6 +744,12 @@ a:hover{
 .schedule__day-boxes--item:nth-child(6) > .box--item:nth-child(2), .schedule__day-boxes--item:nth-child(7) > .box--item:nth-child(2), .schedule__day-boxes--item:nth-child(6) > .box--item:nth-child(4), .schedule__day-boxes--item:nth-child(7) > .box--item:nth-child(4), .schedule__day-boxes--item:nth-child(6) > .box--item:nth-child(5), .schedule__day-boxes--item:nth-child(7) > .box--item:nth-child(5), .schedule__day-boxes--item:nth-child(8) > .box--item:nth-child(5){
     background-color: rgb(63, 171, 106);
 }
+.olimp > .schedule__day-boxes > .schedule__day-boxes--item > .box--item{
+    background: none;
+}
+.olimp > .schedule__day-boxes > .schedule__day-boxes--item:nth-child(2) > .box--item:nth-child(4), .olimp > .schedule__day-boxes > .schedule__day-boxes--item:nth-child(3) > .box--item:nth-child(4), .olimp > .schedule__day-boxes > .schedule__day-boxes--item:nth-child(2) > .box--item:nth-child(2), .olimp > .schedule__day-boxes > .schedule__day-boxes--item:nth-child(3) > .box--item:nth-child(2){
+    background: #EFCFCF;
+}
 .schedule--item{
     font-size: 24px;
     text-align: center;
@@ -751,10 +775,40 @@ a:hover{
     font-size: 12px;
     font-weight: 500;
 }
+#advert{
+    padding-top: 332px;
+}
+.entry--margin{
+    margin-top: -216px;
+}
+.olimp{
+    display: none;
+}
+.mobile__schedule{
+    display: none;
+}
 
+@media screen and (min-width: 360px) and (max-width: 430px){
+    .wrapper{
+        height: 10vh;
+    }
+}
 @media screen and (max-width: 1200px){
-    .header__wrap, .info, .schedule{
+    .header__wrap, .info, .schedule, .coach, .list__open{
         max-width: calc(100% - 40px)
+    }
+    .coach{
+        justify-content: center;
+    }
+    .nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .schedule--item{
+        font-size: 14px;
+    }
+    .latin{
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 499px){
@@ -784,12 +838,12 @@ a:hover{
 }
 @media screen and (max-width: 1230px){
     .wrapper{
-        height: 75vh;
+        height: 61vh;
     }
 }
 @media screen and (max-width: 1023px){
-    .header__wrap{
-
+    .header{
+        z-index: 6;
     }
     .logo__text{
         display: none;
@@ -818,8 +872,8 @@ a:hover{
         justify-content: center;
     }
     .directions__european-text, .directions__latin-text, .directions__child{
-        font-size: 48px;
-        line-height: 59px;
+        font-size: 24px;
+        line-height: 30px;
         text-align: center;
         margin: 0;
     }
@@ -878,6 +932,7 @@ a:hover{
     }
     .footer__info-name{
         text-align: center;
+        margin: 0 auto;
     }
     .footer__info-contacts{
         flex-direction: column;
@@ -889,12 +944,9 @@ a:hover{
     .contacts__vk-icon{
         width: 40px;
     }
-    .list__open{
-        padding: 30px 10px;
-    }
     .history__text-title{
-        font-size: 48px;
-        line-height: 59px;
+        font-size: 40px;
+        line-height: 42px;
     }
     .list__open-item{
         flex-direction: column;
@@ -923,6 +975,8 @@ a:hover{
     }
     .entry{
         padding: 30px 15px;
+        max-width: calc(100% - 40px);
+        box-sizing: border-box;
     }
     .entry__text{
         gap: 20px;
@@ -933,9 +987,6 @@ a:hover{
     }
     .video{
         object-fit: contain;
-    }
-    .scroll--arrow{
-        display: none;
     }
     .european__list, .latin__list, .child__list{
         position: unset;
@@ -1035,9 +1086,6 @@ a:hover{
         margin-top: -98px;
         padding-top: 98px;
     }
-    .history__open{
-        padding: 70px 10px;
-    }
     #overlay{
         background: black;
         opacity: 0.6;
@@ -1052,5 +1100,127 @@ a:hover{
     }
     .wrapper{
         background: url("../img/main.png") top center/100% no-repeat;
+    }
+    .entry__form-input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .entry__text-desc, .entry__text-title{
+        text-align: center;
+    }
+    .info{
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 90px;
+    }
+    .info__text-title{
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .info__text{
+        gap: 10px;
+    }
+    .info__text-desc{
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .info__form{
+        height: 200px;
+        padding: 20px;
+    }
+    .info__form-title{
+        display: none;
+    }
+    .last{
+        padding: 50px 0;
+    }
+    .schedule__choose-address{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .schedule__time{
+        display: none;
+    }
+    .schedule__day{
+        display: none;
+    }
+    .history__text{
+        max-width: calc(100% - 40px);
+        box-sizing: border-box;
+    }
+    .olimp{
+        display: none;
+    }
+    .wrapper{
+        height: 100vh;
+        background-size: 100vw 100vh;
+    }
+    .mobile__schedule{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 25px auto 0 auto;
+    }
+    .mobile__schedule-item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mobile__day{
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .mobile__place{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 15px;
+    }
+    .red--item{
+        border-left: 2px solid #A50000;
+    }
+    .mobile__place-age{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .mobile__place-dance{
+        background: black;
+        color: white;
+        font-size: 20px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    .green--item{
+        border-left: 2px solid rgb(63, 171, 106);
+    }
+    .pink--item{
+        border-left: 2px solid #EFCFCF;
+    }
+    .mobile--olimp{
+        display: none;
+    }
+    @keyframes arrow {
+        0%{
+            transform: rotateY(0) translateY(0);
+        }
+        50%{
+            transform: rotateY(0) translateY(0);
+        }
+        100%{
+            transform: rotateY(0) translateY(0);
+        }
+    }
+    *:hover{
+        color: inherit;
+        background: inherit;
+        outline: inherit;
+        border: inherit;
     }
 }

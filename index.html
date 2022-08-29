@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Школа спортивных бальных танцев "Агон" для детей и взрослых в Воронеже по доступным ценам.</title>
+    <meta name="description" content="Танцевально-спортивный клуб 'Агон' проводит осенний набор в танцевальные группы. Обучение взрослых и детей профессионалами по низким ценам. Первое занятие бесплатно!">
+    <meta name="keywords" content="бальные танцы, бальные танцы воронеж, спортивные бальные танцы, бальные танцы для детей, бальные танцы 2022, бальные танцы для мальчиков, бальные танцы для девочек, школа бальных танцев, школа бальных танцев воронеж">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            var z = null;m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(90136184, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/90136184" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 <header class="header">
@@ -15,8 +35,8 @@
         </div>
         <nav class="nav">
             <a href="#directions" class="nav__item">Направления</a>
-            <a href="" class="nav__item nav__history">Расписание</a>
-            <a href="" class="nav__item">История</a>
+            <a href="#sch" class="nav__item nav__history">Расписание</a>
+            <a href="#history" class="nav__item">История</a>
             <a href="#coach" class="nav__item">Тренеры</a>
             <a href="#footer" class="nav__item">Адрес</a>
         </nav>
@@ -31,8 +51,8 @@
             <div class="mobile__nav">
                 <nav class="nav">
                     <a href="#directions" class="nav__item">Направления</a>
-                    <a href="" class="nav__item nav__history">Расписание</a>
-                    <a href="" class="nav__item">О нас</a>
+                    <a href="#sch" class="nav__item nav__history">Расписание</a>
+                    <a href="#history" class="nav__item">История</a>
                     <a href="#coach" class="nav__item">Тренеры</a>
                     <a href="#footer" class="nav__item">Адрес</a>
                 </nav>
@@ -52,11 +72,11 @@
 </header>
 <main class="wrapper">
     <div class="info">
-        <div class="info__text">
+        <div class="info__text wow animate__animated animate__bounceInLeft">
             <h1 class="info__text-title">Школа бальных танцев для детей и взрослых в Воронеже</h1>
             <p class="info__text-desc">Команда педагогов-профессионалов готовит спортсменов всех уровней по всем направлениям танцевального спорта</p>
         </div>
-        <form class="info__form">
+        <form class="info__form wow animate__animated animate__bounceInRight">
             <p class="info__form-title">Запись на первое занятие</p>
             <input type="text" class="info__form-input" placeholder="ФИО">
             <input type="email" class="info__form-input" placeholder="Email">
@@ -83,7 +103,7 @@
                         <li class="european__list-dance">квикстеп</li>
                     </ul>
                     <p class="european__list-name">Набираем детей с 5 лет</p>
-                    <a href="" class="european__check">ЗАПИСАТЬСЯ</a>
+                    <a href="#advert" class="european__check">ЗАПИСАТЬСЯ</a>
                 </div>
             </div>
             <div class="directions__latin">
@@ -98,7 +118,7 @@
                         <li class="european__list-dance latin__drop">джайв</li>
                     </ul>
                     <p class="european__list-name latin__drop">Набираем детей с 5 лет</p>
-                    <a href="" class="latin__check">ЗАПИСАТЬСЯ</a>
+                    <a href="#advert" class="latin__check">ЗАПИСАТЬСЯ</a>
                 </div>
             </div>
         </div>
@@ -114,11 +134,11 @@
                     <li class="european__list-dance">вальс дружбы</li>
                 </ul>
                 <p class="european__list-name">Набираем детей с 5 лет</p>
-                <a href="" class="child__check">ЗАПИСАТЬСЯ</a>
+                <a href="#advert" class="child__check">ЗАПИСАТЬСЯ</a>
             </div>
         </div>
     </div>
-    <div class="schedule">
+    <div id="sch" class="schedule wow animate__animated animate__zoomIn">
         <div class="schedule__choose">
             <p class="schedule__choose-address schedule__choose-active">СК "Гран - При"</p>
             <p class="schedule__choose-address">Жил. массив Олимпийский, 10</p>
@@ -209,24 +229,161 @@
                 </div>
             </div>
         </div>
+        <div class="schedule__time olimp">
+            <p class="schedule__time-item">17:00</p>
+            <p class="schedule__time-item">17:30</p>
+            <p class="schedule__time-item">18:00</p>
+            <p class="schedule__time-item">18:30</p>
+            <p class="schedule__time-item">19:00</p>
+            <p class="schedule__time-item">19:30</p>
+            <p class="schedule__time-item">21:00</p>
+            <p class="schedule__time-item">21:30</p>
+        </div>
+        <div class="schedule__day olimp">
+            <div class="schedule__day-values">
+                <p class="schedule__day-values--item">Пн</p>
+                <p class="schedule__day-values--item">Вт</p>
+                <p class="schedule__day-values--item">Ср</p>
+                <p class="schedule__day-values--item">Чт</p>
+                <p class="schedule__day-values--item">Пт</p>
+                <p class="schedule__day-values--item">Сб</p>
+            </div>
+            <div class="schedule__day-boxes">
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item red">Дети<br>4 - 7 лет</p></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item red">Дети<br>4 - 7 лет</p></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item red gran">Детские<br> танцы</p></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"><p class="schedule--item red gran">Детские<br> танцы</p></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+                <div class="schedule__day-boxes--item">
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                    <div class="box--item"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__schedule energy">
+            <div class="mobile__schedule-item">
+                <p class="mobile__day">Вт</p>
+                <div class="mobile__place red--item">
+                    <p class="mobile__place-age">Дети 4 - 7 лет</p>
+                    <p class="mobile__place-dance">Детские танцы <br> 18:00 - 19:00</p>
+                </div>
+                <div class="mobile__place green--item">
+                    <p class="mobile__place-age">Взрослые</p>
+                    <p class="mobile__place-dance">Детские танцы <br> 19:30 - 21:00</p>
+                </div>
+            </div>
+            <div class="mobile__schedule-item">
+                <p class="mobile__day">Чт</p>
+                <div class="mobile__place red--item">
+                    <p class="mobile__place-age">Дети 4 - 7 лет</p>
+                    <p class="mobile__place-dance">Детские танцы <br> 18:00 - 19:00</p>
+                </div>
+                <div class="mobile__place green--item">
+                    <p class="mobile__place-age">Взрослые</p>
+                    <p class="mobile__place-dance">Детские танцы <br> 19:30 - 21:00</p>
+                </div>
+            </div>
+            <div class="mobile__schedule-item">
+                <p class="mobile__day">Пт</p>
+                <div class="mobile__place red--item">
+                    <p class="mobile__place-age">Дети 4 - 7 лет</p>
+                    <p class="mobile__place-dance">Детские танцы <br> 18:30 - 19:30</p>
+                </div>
+                <div class="mobile__place green--item">
+                    <p class="mobile__place-age">Взрослые</p>
+                    <p class="mobile__place-dance">Детские танцы <br> 19:30 - 21:30</p>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__schedule mobile--olimp">
+            <div class="mobile__schedule-item">
+                <p class="mobile__day">Вт</p>
+                <div class="mobile__place pink--item">
+                    <p class="mobile__place-age">Дети 4 - 7 лет</p>
+                    <p class="mobile__place-dance">Детские танцы <br> 17:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="mobile__schedule-item">
+                <p class="mobile__day">Чт</p>
+                <div class="mobile__place pink--item">
+                    <p class="mobile__place-age">Дети 4 - 7 лет</p>
+                    <p class="mobile__place-dance">Детские танцы <br> 17:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="adv">
-        <div class="entry">
+    <div id="advert" class="adv">
+        <form class="entry entry--margin">
             <div class="entry__text">
                 <p class="entry__text-title">Запись на первое занятие</p>
-                <p class="entry__text-desc">Оставьте заявку для записи на первое заятие и мы свяжется с Вами
+                <p class="entry__text-desc">Первое занятие бесплатно! Оставьте заявку для записи на первое занятие, и мы свяжется с Вами
                     в ближайшее время</p>
             </div>
             <div class="entry__form">
                 <input class="entry__form-input" type="text" placeholder="ФИО">
                 <input class="entry__form-input" type="text" placeholder="E-mail">
-                <a href="" class="entry__form-button">ЗАПИСАТЬСЯ</a>
+                <button type="submit" class="entry__form-button">ЗАПИСАТЬСЯ</button>
             </div>
-        </div>
+        </form>
     </div>
-    <div class="list__open history__open">
+    <div id="history" class="list__open history__open">
         <div class="list__items">
-            <div class="list__open-item">
+            <div class="list__open-item wow animate__animated animate__fadeInLeft">
                 <div class="history__text">
                     <p class="history__text-title">КЛУБ “АГОН” ОСНОВАН В 1999 ГОДУ</p>
                     <p class="history__text-description">Клуб был основан бессменным руководителем Садчиковым Павлом Валерьевичем. С <span class="text--red">2001</span> года ТСК "Агон" является членом ВООСО "Союз танцевального спорта Воронежской области". С <span class="text--red">2011</span> года зарегистрирован в Министерстве юстиции
@@ -234,7 +391,7 @@
                 </div>
                 <img src="img/first_history.png" alt="" class="history__image-first">
             </div>
-            <div class="list__open-item">
+            <div class="list__open-item wow animate__animated animate__fadeInRight">
                 <img src="img/second_history.png" alt="" class="history__image-second">
                 <div class="history__text">
                     <p class="history__text-title">ВЫПУСКАЕМ МАСТЕРОВ СПОРТА РОССИИ</p>
@@ -244,70 +401,70 @@
         </div>
     </div>
     <div id="coach" class="coach">
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/spv.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Павел Садчиков</p>
                 <p class="coach__item-text--desc">Руководитель и старший тренер ТСК «Агон»</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/zjl.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Юлия Зайка</p>
                 <p class="coach__item-text--desc">Тренер ТСК "Агон"</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/saz.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Александр Свиридов</p>
                 <p class="coach__item-text--desc">Тренер ТСК "Агон"</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/pva.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Виктория Петрова</p>
                 <p class="coach__item-text--desc">Тренер ТСК "Агон"</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/sma.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Максим Шабанов</p>
                 <p class="coach__item-text--desc">Тренер ТСК "Агон"</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/sop.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Олег Садчиков</p>
                 <p class="coach__item-text--desc">Тренер ТСК "Агон"</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/kad.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Алина Кравцова</p>
                 <p class="coach__item-text--desc">Хореограф ТСК «Агон»</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/sao.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Анна Садчикова</p>
                 <p class="coach__item-text--desc">Тренер ТСК "Агон"</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/md.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Дмитрий Маслов</p>
                 <p class="coach__item-text--desc">Тренер ТСК "Агон"</p>
             </div>
         </div>
-        <div class="coach__item">
+        <div class="coach__item wow animate__animated animate__slideInUp">
             <img src="img/pi.png" class="coach__item-image">
             <div class="coach__item-text">
                 <p class="coach__item-text--name">Игорь Пульман</p>
@@ -316,18 +473,18 @@
         </div>
     </div>
     <div class="last">
-        <div class="entry">
+        <form class="entry">
             <div class="entry__text">
                 <p class="entry__text-title">Запись на первое занятие</p>
-                <p class="entry__text-desc">Оставьте заявку для записи на первое заятие и мы свяжется с Вами
+                <p class="entry__text-desc">Первое занятие бесплатно! Оставьте заявку для записи на первое занятие, и мы свяжется с Вами
                     в ближайшее время</p>
             </div>
             <div class="entry__form">
                 <input class="entry__form-input" type="text" placeholder="ФИО">
                 <input class="entry__form-input" type="text" placeholder="E-mail">
-                <a href="" class="entry__form-button">ЗАПИСАТЬСЯ</a>
+                <button type="submit" class="entry__form-button">ЗАПИСАТЬСЯ</button>
             </div>
-        </div>
+        </form>
     </div>
 </main>
 <footer id="footer" class="footer">
@@ -358,8 +515,13 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/header.js"></script>
 <script src="js/directions.js"></script>
 <script src="js/toggles.js"></script>
+<script src="js/schedule.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
